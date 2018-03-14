@@ -1,0 +1,766 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 16929677982,
+              "status": "passed"
+            },
+            "match": {
+              "location": "InitializeWebDrive.before()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Search based on Speakers",
+        "description": "",
+        "id": "search-with-specific-filter-and-add-it-to-cart;search-based-on-speakers",
+        "after": [
+          {
+            "result": {
+              "duration": 1148954592,
+              "status": "passed"
+            },
+            "match": {
+              "location": "InitializeWebDrive.after(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1138322658,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": ": I am at the home page",
+            "match": {
+              "location": "SearchStepDfn._i_am_at_the_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2241777359,
+              "error_message": "org.openqa.selenium.NoSuchElementException: {\"errorMessage\":\"Unable to find element with xpath \u0027//div[@id\u003d\u0027main-nav\u0027]//a[text()\u003d\u0027Speakers\u0027]\u0027\",\"request\":{\"headers\":{\"Accept-Encoding\":\"gzip,deflate\",\"Connection\":\"Keep-Alive\",\"Content-Length\":\"71\",\"Content-Type\":\"application/json; charset\u003dutf-8\",\"Host\":\"localhost:1653\",\"User-Agent\":\"Apache-HttpClient/4.5.1 (Java/1.8.0_131)\"},\"httpVersion\":\"1.1\",\"method\":\"POST\",\"post\":\"{\\\"using\\\":\\\"xpath\\\",\\\"value\\\":\\\"//div[@id\u003d\u0027main-nav\u0027]//a[text()\u003d\u0027Speakers\u0027]\\\"}\",\"url\":\"/element\",\"urlParsed\":{\"anchor\":\"\",\"query\":\"\",\"file\":\"element\",\"directory\":\"/\",\"path\":\"/element\",\"relative\":\"/element\",\"port\":\"\",\"host\":\"\",\"password\":\"\",\"user\":\"\",\"userInfo\":\"\",\"authority\":\"\",\"protocol\":\"\",\"source\":\"/element\",\"queryKey\":{},\"chunks\":[\"element\"]},\"urlOriginal\":\"/session/73d22460-26e8-11e8-853f-11f5334d38a7/element\"}}\nCommand duration or timeout: 2.24 seconds\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00272.53.1\u0027, revision: \u0027a36b8b1cd5757287168e54b817830adce9b0158d\u0027, time: \u00272016-06-30 19:26:09\u0027\nSystem info: host: \u0027Ajit-PC\u0027, ip: \u0027192.168.0.109\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_131\u0027\nDriver info: org.openqa.selenium.phantomjs.PhantomJSDriver\nCapabilities [{applicationCacheEnabled\u003dfalse, rotatable\u003dfalse, handlesAlerts\u003dfalse, databaseEnabled\u003dfalse, version\u003d2.1.1, platform\u003dXP, browserConnectionEnabled\u003dfalse, proxy\u003d{proxyType\u003ddirect}, nativeEvents\u003dtrue, acceptSslCerts\u003dfalse, driverVersion\u003d1.2.0, locationContextEnabled\u003dfalse, webStorageEnabled\u003dfalse, browserName\u003dphantomjs, takesScreenshot\u003dtrue, driverName\u003dghostdriver, javascriptEnabled\u003dtrue, cssSelectorsEnabled\u003dtrue}]\nSession ID: 73d22460-26e8-11e8-853f-11f5334d38a7\n*** Element info: {Using\u003dxpath, value\u003d//div[@id\u003d\u0027main-nav\u0027]//a[text()\u003d\u0027Speakers\u0027]}\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)\r\n\tat com.cucumber.framework.helper.PageObject.homepage.HomePage.navigateTo(HomePage.java:133)\r\n\tat com.cucumber.framework.stepdefinition.SearchStepDfn._i_click_on_the_something_search_filter(SearchStepDfn.java:38)\r\n\tat ✽.When : I click on the \"Speakers\" search filter(featurefile/SearchWithFilter.feature:5)\r\nCaused by: org.openqa.selenium.remote.ScreenshotException: Screen shot has been taken\nBuild info: version: \u00272.53.1\u0027, revision: \u0027a36b8b1cd5757287168e54b817830adce9b0158d\u0027, time: \u00272016-06-30 19:26:09\u0027\nSystem info: host: \u0027Ajit-PC\u0027, ip: \u0027192.168.0.109\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_131\u0027\nDriver info: driver.version: RemoteWebDriver\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:138)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:363)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:361)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)\r\n\tat com.cucumber.framework.helper.PageObject.homepage.HomePage.navigateTo(HomePage.java:133)\r\n\tat com.cucumber.framework.stepdefinition.SearchStepDfn._i_click_on_the_something_search_filter(SearchStepDfn.java:38)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:37)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:13)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:31)\r\n\tat cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:38)\r\n\tat cucumber.runtime.StepDefinitionMatch.runStep(StepDefinitionMatch.java:37)\r\n\tat cucumber.runtime.Runtime.runStep(Runtime.java:299)\r\n\tat cucumber.runtime.model.StepContainer.runStep(StepContainer.java:44)\r\n\tat cucumber.runtime.model.StepContainer.runSteps(StepContainer.java:39)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:44)\r\n\tat cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)\r\n\tat cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)\r\n\tat cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)\r\n\tat org.testng.internal.Invoker.invokeMethod(Invoker.java:643)\r\n\tat org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)\r\n\tat org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)\r\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)\r\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)\r\n\tat org.testng.TestRunner.privateRun(TestRunner.java:782)\r\n\tat org.testng.TestRunner.run(TestRunner.java:632)\r\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:366)\r\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)\r\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)\r\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:268)\r\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)\r\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)\r\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)\r\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1169)\r\n\tat org.testng.TestNG.run(TestNG.java:1064)\r\n\tat org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)\r\n\tat org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)\r\n\tat org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)\r\nCaused by: org.openqa.selenium.NoSuchElementException: {\"errorMessage\":\"Unable to find element with xpath \u0027//div[@id\u003d\u0027main-nav\u0027]//a[text()\u003d\u0027Speakers\u0027]\u0027\",\"request\":{\"headers\":{\"Accept-Encoding\":\"gzip,deflate\",\"Connection\":\"Keep-Alive\",\"Content-Length\":\"71\",\"Content-Type\":\"application/json; charset\u003dutf-8\",\"Host\":\"localhost:1653\",\"User-Agent\":\"Apache-HttpClient/4.5.1 (Java/1.8.0_131)\"},\"httpVersion\":\"1.1\",\"method\":\"POST\",\"post\":\"{\\\"using\\\":\\\"xpath\\\",\\\"value\\\":\\\"//div[@id\u003d\u0027main-nav\u0027]//a[text()\u003d\u0027Speakers\u0027]\\\"}\",\"url\":\"/element\",\"urlParsed\":{\"anchor\":\"\",\"query\":\"\",\"file\":\"element\",\"directory\":\"/\",\"path\":\"/element\",\"relative\":\"/element\",\"port\":\"\",\"host\":\"\",\"password\":\"\",\"user\":\"\",\"userInfo\":\"\",\"authority\":\"\",\"protocol\":\"\",\"source\":\"/element\",\"queryKey\":{},\"chunks\":[\"element\"]},\"urlOriginal\":\"/session/73d22460-26e8-11e8-853f-11f5334d38a7/element\"}}\nFor documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00272.53.1\u0027, revision: \u0027a36b8b1cd5757287168e54b817830adce9b0158d\u0027, time: \u00272016-06-30 19:26:09\u0027\nSystem info: host: \u0027Ajit-PC\u0027, ip: \u0027192.168.0.109\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_131\u0027\nDriver info: driver.version: unknown\r\n",
+              "status": "failed"
+            },
+            "line": 5,
+            "name": ": I click on the \"Speakers\" search filter",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Speakers",
+                  "offset": 18
+                }
+              ],
+              "location": "SearchStepDfn._i_click_on_the_something_search_filter(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": ": I should be at the \"Speakers\" search page with \"32 items\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Speakers",
+                  "offset": 22
+                },
+                {
+                  "val": "32 items",
+                  "offset": 50
+                }
+              ],
+              "location": "SearchStepDfn._i_should_be_at_the_something_search_page_with_something(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": ": The title should be \"Speakers\" search page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Speakers",
+                  "offset": 23
+                }
+              ],
+              "location": "SearchStepDfn._the_title_should_be_something_search_page(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": ": I select \"SONY\" as the brand",
+            "match": {
+              "arguments": [
+                {
+                  "val": "SONY",
+                  "offset": 12
+                }
+              ],
+              "location": "SearchWithFilter._i_select_something_as_the_brand(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": ": I select \"£40 - £80\" as the price filter",
+            "match": {
+              "arguments": [
+                {
+                  "val": "£40 - £80",
+                  "offset": 12
+                }
+              ],
+              "location": "SearchWithFilter._i_select_something_as_the_price_filter(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "output": [
+              "C:\\Users\\Ajit\\git\\SeleniumCucumber\\target\\test-classes\\screenshots\\_2018-03-13\\Search based on Speakers.jpg"
+            ],
+            "line": 10,
+            "name": ": I should be at the \"Speakers\" search page with \"3 items\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Speakers",
+                  "offset": 22
+                },
+                {
+                  "val": "3 items",
+                  "offset": 50
+                }
+              ],
+              "location": "SearchStepDfn._i_should_be_at_the_something_search_page_with_something(String,String)"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 67699133616,
+              "error_message": "org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe) on port 7055; process output follows: \ntate\":0,\"blocklistURL\":null,\"startupData\":null}\r\n1520964083271\taddons.xpi\tDEBUG\tUpdating database with changes to installed add-ons\r\n1520964083271\taddons.xpi-utils\tDEBUG\tUpdating add-on states\r\n1520964083279\taddons.xpi\tDEBUG\tRegistering manifest for C:\\Program Files (x86)\\Mozilla Firefox\\browser\\features\\activity-stream@mozilla.org.xpi\r\n1520964083280\taddons.xpi\tDEBUG\tCalling bootstrap method startup on activity-stream@mozilla.org version 2018.01.04.0062-4997c81d\r\n1520964083281\taddons.xpi\tDEBUG\tRegistering manifest for C:\\Program Files (x86)\\Mozilla Firefox\\browser\\features\\aushelper@mozilla.org.xpi\r\n1520964083281\taddons.xpi\tDEBUG\tCalling bootstrap method startup on aushelper@mozilla.org version 2.0\r\n1520964083283\taddons.xpi\tDEBUG\tRegistering manifest for C:\\Program Files (x86)\\Mozilla Firefox\\browser\\features\\firefox@getpocket.com.xpi\r\n1520964083284\taddons.xpi\tDEBUG\tCalling bootstrap method startup on firefox@getpocket.com version 1.0.5\r\n1520964083390\taddons.xpi\tDEBUG\tRegistering manifest for C:\\Program Files (x86)\\Mozilla Firefox\\browser\\features\\followonsearch@mozilla.com.xpi\r\n1520964083392\taddons.xpi\tDEBUG\tCalling bootstrap method startup on followonsearch@mozilla.com version 0.9.6\r\n1520964083393\taddons.xpi\tDEBUG\tRegistering manifest for C:\\Program Files (x86)\\Mozilla Firefox\\browser\\features\\formautofill@mozilla.org.xpi\r\n1520964083394\taddons.xpi\tDEBUG\tCalling bootstrap method startup on formautofill@mozilla.org version 1.0\r\n1520964083395\taddons.xpi\tDEBUG\tRegistering manifest for C:\\Program Files (x86)\\Mozilla Firefox\\browser\\features\\onboarding@mozilla.org.xpi\r\n1520964083396\taddons.xpi\tDEBUG\tCalling bootstrap method startup on onboarding@mozilla.org version 1.0\r\n1520964083397\taddons.xpi\tDEBUG\tRegistering manifest for C:\\Program Files (x86)\\Mozilla Firefox\\browser\\features\\screenshots@mozilla.org.xpi\r\n1520964083397\taddons.xpi\tDEBUG\tCalling bootstrap method startup on screenshots@mozilla.org version 25.0.0\r\n1520964083398\taddons.xpi\tDEBUG\tRegistering manifest for C:\\Program Files (x86)\\Mozilla Firefox\\browser\\features\\shield-recipe-client@mozilla.org.xpi\r\n1520964083399\taddons.xpi\tDEBUG\tCalling bootstrap method startup on shield-recipe-client@mozilla.org version 76.1\r\n1520964083451\taddons.xpi\tDEBUG\tRegistering manifest for C:\\Program Files (x86)\\Mozilla Firefox\\browser\\features\\webcompat@mozilla.org.xpi\r\n1520964083452\taddons.xpi\tDEBUG\tCalling bootstrap method startup on webcompat@mozilla.org version 1.1\r\n1520964083490\taddons.manager\tDEBUG\tRegistering shutdown blocker for XPIProvider\r\n1520964083490\taddons.manager\tDEBUG\tProvider finished startup: XPIProvider\r\n1520964083490\taddons.manager\tDEBUG\tStarting provider: LightweightThemeManager\r\n1520964083490\taddons.manager\tDEBUG\tRegistering shutdown blocker for LightweightThemeManager\r\n1520964083491\taddons.manager\tDEBUG\tProvider finished startup: LightweightThemeManager\r\n1520964083492\taddons.manager\tDEBUG\tStarting provider: GMPProvider\r\n1520964083512\taddons.manager\tDEBUG\tRegistering shutdown blocker for GMPProvider\r\n1520964083513\taddons.manager\tDEBUG\tProvider finished startup: GMPProvider\r\n1520964083513\taddons.manager\tDEBUG\tStarting provider: PluginProvider\r\n1520964083513\taddons.manager\tDEBUG\tRegistering shutdown blocker for PluginProvider\r\n1520964083513\taddons.manager\tDEBUG\tProvider finished startup: PluginProvider\r\n1520964083514\taddons.manager\tDEBUG\tCompleted startup sequence\r\n[Child 5888, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346\r\n[Child 5888, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346\r\n1520964114330\taddons.repository\tDEBUG\tNo addons.json found.\r\n1520964115013\taddons.manager\tDEBUG\tStarting provider: PreviousExperimentProvider\r\n1520964115013\taddons.manager\tDEBUG\tRegistering shutdown blocker for PreviousExperimentProvider\r\n1520964115014\taddons.manager\tDEBUG\tProvider finished startup: PreviousExperimentProvider\r\n1520964116102\taddons.xpi-utils\tDEBUG\tXPI Database saved, setting schema version preference to 23\r\n\nBuild info: version: \u00272.53.1\u0027, revision: \u0027a36b8b1cd5757287168e54b817830adce9b0158d\u0027, time: \u00272016-06-30 19:26:09\u0027\nSystem info: host: \u0027Ajit-PC\u0027, ip: \u0027192.168.0.109\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_131\u0027\nDriver info: driver.version: FirefoxDriver\r\n\tat org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:125)\r\n\tat org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:271)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:119)\r\n\tat org.openqa.selenium.firefox.FirefoxDriver.\u003cinit\u003e(FirefoxDriver.java:216)\r\n\tat org.openqa.selenium.firefox.FirefoxDriver.\u003cinit\u003e(FirefoxDriver.java:211)\r\n\tat org.openqa.selenium.firefox.FirefoxDriver.\u003cinit\u003e(FirefoxDriver.java:128)\r\n\tat com.cucumber.framework.configuration.browser.FirefoxBrowser.getFirefoxDriver(FirefoxBrowser.java:39)\r\n\tat com.cucumber.framework.helper.InitializeWebDrive.standAloneStepUp(InitializeWebDrive.java:55)\r\n\tat com.cucumber.framework.helper.InitializeWebDrive.setUpDriver(InitializeWebDrive.java:146)\r\n\tat com.cucumber.framework.helper.InitializeWebDrive.beforeFirefox(InitializeWebDrive.java:111)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:37)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:13)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:31)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)\r\n\tat cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:223)\r\n\tat cucumber.runtime.Runtime.runHooks(Runtime.java:211)\r\n\tat cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:201)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)\r\n\tat cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)\r\n\tat cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)\r\n\tat cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)\r\n\tat org.testng.internal.Invoker.invokeMethod(Invoker.java:643)\r\n\tat org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)\r\n\tat org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)\r\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)\r\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)\r\n\tat org.testng.TestRunner.privateRun(TestRunner.java:782)\r\n\tat org.testng.TestRunner.run(TestRunner.java:632)\r\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:366)\r\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)\r\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)\r\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:268)\r\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)\r\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)\r\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)\r\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1169)\r\n\tat org.testng.TestNG.run(TestNG.java:1064)\r\n\tat org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)\r\n\tat org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)\r\n\tat org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)\r\nCaused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:\ntate\":0,\"blocklistURL\":null,\"startupData\":null}\r\n1520964083271\taddons.xpi\tDEBUG\tUpdating database with changes to installed add-ons\r\n1520964083271\taddons.xpi-utils\tDEBUG\tUpdating add-on states\r\n1520964083279\taddons.xpi\tDEBUG\tRegistering manifest for C:\\Program Files (x86)\\Mozilla Firefox\\browser\\features\\activity-stream@mozilla.org.xpi\r\n1520964083280\taddons.xpi\tDEBUG\tCalling bootstrap method startup on activity-stream@mozilla.org version 2018.01.04.0062-4997c81d\r\n1520964083281\taddons.xpi\tDEBUG\tRegistering manifest for C:\\Program Files (x86)\\Mozilla Firefox\\browser\\features\\aushelper@mozilla.org.xpi\r\n1520964083281\taddons.xpi\tDEBUG\tCalling bootstrap method startup on aushelper@mozilla.org version 2.0\r\n1520964083283\taddons.xpi\tDEBUG\tRegistering manifest for C:\\Program Files (x86)\\Mozilla Firefox\\browser\\features\\firefox@getpocket.com.xpi\r\n1520964083284\taddons.xpi\tDEBUG\tCalling bootstrap method startup on firefox@getpocket.com version 1.0.5\r\n1520964083390\taddons.xpi\tDEBUG\tRegistering manifest for C:\\Program Files (x86)\\Mozilla Firefox\\browser\\features\\followonsearch@mozilla.com.xpi\r\n1520964083392\taddons.xpi\tDEBUG\tCalling bootstrap method startup on followonsearch@mozilla.com version 0.9.6\r\n1520964083393\taddons.xpi\tDEBUG\tRegistering manifest for C:\\Program Files (x86)\\Mozilla Firefox\\browser\\features\\formautofill@mozilla.org.xpi\r\n1520964083394\taddons.xpi\tDEBUG\tCalling bootstrap method startup on formautofill@mozilla.org version 1.0\r\n1520964083395\taddons.xpi\tDEBUG\tRegistering manifest for C:\\Program Files (x86)\\Mozilla Firefox\\browser\\features\\onboarding@mozilla.org.xpi\r\n1520964083396\taddons.xpi\tDEBUG\tCalling bootstrap method startup on onboarding@mozilla.org version 1.0\r\n1520964083397\taddons.xpi\tDEBUG\tRegistering manifest for C:\\Program Files (x86)\\Mozilla Firefox\\browser\\features\\screenshots@mozilla.org.xpi\r\n1520964083397\taddons.xpi\tDEBUG\tCalling bootstrap method startup on screenshots@mozilla.org version 25.0.0\r\n1520964083398\taddons.xpi\tDEBUG\tRegistering manifest for C:\\Program Files (x86)\\Mozilla Firefox\\browser\\features\\shield-recipe-client@mozilla.org.xpi\r\n1520964083399\taddons.xpi\tDEBUG\tCalling bootstrap method startup on shield-recipe-client@mozilla.org version 76.1\r\n1520964083451\taddons.xpi\tDEBUG\tRegistering manifest for C:\\Program Files (x86)\\Mozilla Firefox\\browser\\features\\webcompat@mozilla.org.xpi\r\n1520964083452\taddons.xpi\tDEBUG\tCalling bootstrap method startup on webcompat@mozilla.org version 1.1\r\n1520964083490\taddons.manager\tDEBUG\tRegistering shutdown blocker for XPIProvider\r\n1520964083490\taddons.manager\tDEBUG\tProvider finished startup: XPIProvider\r\n1520964083490\taddons.manager\tDEBUG\tStarting provider: LightweightThemeManager\r\n1520964083490\taddons.manager\tDEBUG\tRegistering shutdown blocker for LightweightThemeManager\r\n1520964083491\taddons.manager\tDEBUG\tProvider finished startup: LightweightThemeManager\r\n1520964083492\taddons.manager\tDEBUG\tStarting provider: GMPProvider\r\n1520964083512\taddons.manager\tDEBUG\tRegistering shutdown blocker for GMPProvider\r\n1520964083513\taddons.manager\tDEBUG\tProvider finished startup: GMPProvider\r\n1520964083513\taddons.manager\tDEBUG\tStarting provider: PluginProvider\r\n1520964083513\taddons.manager\tDEBUG\tRegistering shutdown blocker for PluginProvider\r\n1520964083513\taddons.manager\tDEBUG\tProvider finished startup: PluginProvider\r\n1520964083514\taddons.manager\tDEBUG\tCompleted startup sequence\r\n[Child 5888, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346\r\n[Child 5888, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346\r\n1520964114330\taddons.repository\tDEBUG\tNo addons.json found.\r\n1520964115013\taddons.manager\tDEBUG\tStarting provider: PreviousExperimentProvider\r\n1520964115013\taddons.manager\tDEBUG\tRegistering shutdown blocker for PreviousExperimentProvider\r\n1520964115014\taddons.manager\tDEBUG\tProvider finished startup: PreviousExperimentProvider\r\n1520964116102\taddons.xpi-utils\tDEBUG\tXPI Database saved, setting schema version preference to 23\r\n\r\n\tat org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:113)\r\n\t... 51 more\r\n",
+              "status": "failed"
+            },
+            "match": {
+              "location": "InitializeWebDrive.beforeFirefox()"
+            }
+          }
+        ],
+        "line": 13,
+        "name": "Validation of Item Bag page",
+        "description": "",
+        "id": "search-with-specific-filter-and-add-it-to-cart;validation-of-item-bag-page",
+        "after": [
+          {
+            "result": {
+              "duration": 905431,
+              "status": "passed"
+            },
+            "match": {
+              "location": "InitializeWebDrive.afterFirefox(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": ": I am at the home page",
+            "match": {
+              "location": "SearchStepDfn._i_am_at_the_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 15,
+            "name": ": I click on the \"Speakers\" search filter",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Speakers",
+                  "offset": 18
+                }
+              ],
+              "location": "SearchStepDfn._i_click_on_the_something_search_filter(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 16,
+            "name": ": I should be at the \"Speakers\" search page with \"32 items\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Speakers",
+                  "offset": 22
+                },
+                {
+                  "val": "32 items",
+                  "offset": 50
+                }
+              ],
+              "location": "SearchStepDfn._i_should_be_at_the_something_search_page_with_something(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": ": The title should be \"Speakers\" search page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Speakers",
+                  "offset": 23
+                }
+              ],
+              "location": "SearchStepDfn._the_title_should_be_something_search_page(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 18,
+            "name": ": I select \"SONY\" as the brand",
+            "match": {
+              "arguments": [
+                {
+                  "val": "SONY",
+                  "offset": 12
+                }
+              ],
+              "location": "SearchWithFilter._i_select_something_as_the_brand(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 19,
+            "name": ": I select \"£40 - £80\" as the price filter",
+            "match": {
+              "arguments": [
+                {
+                  "val": "£40 - £80",
+                  "offset": 12
+                }
+              ],
+              "location": "SearchWithFilter._i_select_something_as_the_price_filter(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 20,
+            "name": ": I should be at the \"Speakers\" search page with \"3 items\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Speakers",
+                  "offset": 22
+                },
+                {
+                  "val": "3 items",
+                  "offset": 50
+                }
+              ],
+              "location": "SearchStepDfn._i_should_be_at_the_something_search_page_with_something(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": ": I select the \"SONY X11\" with description as \"White\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "SONY X11",
+                  "offset": 16
+                },
+                {
+                  "val": "White",
+                  "offset": 47
+                }
+              ],
+              "location": "LaptopCart._i_select_the_something_with_description_as_something(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": ": Add it to the cart",
+            "match": {
+              "location": "LaptopCart._add_it_to_the_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": ": I change the quantity to \"2\" and click on update button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 28
+                }
+              ],
+              "location": "SearchWithFilter._i_change_the_quantity_to_something_and_click_on_update_button(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": ": Navigate to user details page and provide the following details",
+            "match": {
+              "location": "LaptopCart._navigate_to_user_details_page_and_provide_the_following_details(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Destination",
+                  "Singapore"
+                ],
+                "line": 25
+              },
+              {
+                "cells": [
+                  "Airline",
+                  "AirAsia"
+                ],
+                "line": 26
+              },
+              {
+                "cells": [
+                  "FlightNo",
+                  "A089"
+                ],
+                "line": 27
+              },
+              {
+                "cells": [
+                  "FlightDate",
+                  "24/08/2018"
+                ],
+                "line": 28
+              },
+              {
+                "cells": [
+                  "FlightTime",
+                  "5:00"
+                ],
+                "line": 29
+              },
+              {
+                "cells": [
+                  "Terminal",
+                  "Terminal 1"
+                ],
+                "line": 30
+              },
+              {
+                "cells": [
+                  "FirstName",
+                  "Selenium"
+                ],
+                "line": 31
+              },
+              {
+                "cells": [
+                  "LastName",
+                  "Java"
+                ],
+                "line": 32
+              },
+              {
+                "cells": [
+                  "Email",
+                  "sq@j.com"
+                ],
+                "line": 33
+              },
+              {
+                "cells": [
+                  "Phone",
+                  "121212121"
+                ],
+                "line": 34
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 12,
+            "name": "@firefox"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 25339810394,
+              "error_message": "org.openqa.selenium.SessionNotCreatedException: session not created exception\nfrom unknown error: Runtime.executionContextCreated has invalid \u0027context\u0027: {\"auxData\":{\"frameId\":\"(DCB3D8B8614CAC7F99751BA5B4868CD1)\",\"isDefault\":true},\"id\":1,\"name\":\"\",\"origin\":\"://\"}\n  (Session info: chrome\u003d64.0.3282.186)\n  (Driver info: chromedriver\u003d2.22.397933 (1cab651507b88dec79b2b2a22d1943c01833cc1b),platform\u003dWindows NT 10.0.16299 x86_64) (WARNING: The server did not provide any stacktrace information)\nCommand duration or timeout: 24.21 seconds\nBuild info: version: \u00272.53.1\u0027, revision: \u0027a36b8b1cd5757287168e54b817830adce9b0158d\u0027, time: \u00272016-06-30 19:26:09\u0027\nSystem info: host: \u0027Ajit-PC\u0027, ip: \u0027192.168.0.109\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u00271.8.0_131\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\r\n\tat org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)\r\n\tat org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:678)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:249)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:131)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.\u003cinit\u003e(RemoteWebDriver.java:144)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:170)\r\n\tat org.openqa.selenium.chrome.ChromeDriver.\u003cinit\u003e(ChromeDriver.java:138)\r\n\tat com.cucumber.framework.configuration.browser.ChromeBrowser.getChromeDriver(ChromeBrowser.java:45)\r\n\tat com.cucumber.framework.helper.InitializeWebDrive.standAloneStepUp(InitializeWebDrive.java:51)\r\n\tat com.cucumber.framework.helper.InitializeWebDrive.setUpDriver(InitializeWebDrive.java:146)\r\n\tat com.cucumber.framework.helper.InitializeWebDrive.beforeChrome(InitializeWebDrive.java:123)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat cucumber.runtime.Utils$1.call(Utils.java:37)\r\n\tat cucumber.runtime.Timeout.timeout(Timeout.java:13)\r\n\tat cucumber.runtime.Utils.invoke(Utils.java:31)\r\n\tat cucumber.runtime.java.JavaHookDefinition.execute(JavaHookDefinition.java:60)\r\n\tat cucumber.runtime.Runtime.runHookIfTagsMatch(Runtime.java:223)\r\n\tat cucumber.runtime.Runtime.runHooks(Runtime.java:211)\r\n\tat cucumber.runtime.Runtime.runBeforeHooks(Runtime.java:201)\r\n\tat cucumber.runtime.model.CucumberScenario.run(CucumberScenario.java:40)\r\n\tat cucumber.runtime.model.CucumberFeature.run(CucumberFeature.java:165)\r\n\tat cucumber.api.testng.TestNGCucumberRunner.runCucumber(TestNGCucumberRunner.java:63)\r\n\tat cucumber.api.testng.AbstractTestNGCucumberTests.feature(AbstractTestNGCucumberTests.java:21)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)\r\n\tat sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)\r\n\tat sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)\r\n\tat java.lang.reflect.Method.invoke(Method.java:498)\r\n\tat org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)\r\n\tat org.testng.internal.Invoker.invokeMethod(Invoker.java:643)\r\n\tat org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)\r\n\tat org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)\r\n\tat org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)\r\n\tat org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)\r\n\tat org.testng.TestRunner.privateRun(TestRunner.java:782)\r\n\tat org.testng.TestRunner.run(TestRunner.java:632)\r\n\tat org.testng.SuiteRunner.runTest(SuiteRunner.java:366)\r\n\tat org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)\r\n\tat org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)\r\n\tat org.testng.SuiteRunner.run(SuiteRunner.java:268)\r\n\tat org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)\r\n\tat org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)\r\n\tat org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)\r\n\tat org.testng.TestNG.runSuitesLocally(TestNG.java:1169)\r\n\tat org.testng.TestNG.run(TestNG.java:1064)\r\n\tat org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)\r\n\tat org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)\r\n\tat org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)\r\n\tat org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)\r\n",
+              "status": "failed"
+            },
+            "match": {
+              "location": "InitializeWebDrive.beforeChrome()"
+            }
+          }
+        ],
+        "line": 37,
+        "name": "Adding multiple item into the cart",
+        "description": "",
+        "id": "search-with-specific-filter-and-add-it-to-cart;adding-multiple-item-into-the-cart",
+        "after": [
+          {
+            "result": {
+              "duration": 830652,
+              "status": "passed"
+            },
+            "match": {
+              "location": "InitializeWebDrive.afterChrome(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 38,
+            "name": ": I am at the home page",
+            "match": {
+              "location": "SearchStepDfn._i_am_at_the_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 39,
+            "name": ": I click on the \"Headphones\" search filter",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Headphones",
+                  "offset": 18
+                }
+              ],
+              "location": "SearchStepDfn._i_click_on_the_something_search_filter(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 40,
+            "name": ": I select \"JABRA\" as the brand",
+            "match": {
+              "arguments": [
+                {
+                  "val": "JABRA",
+                  "offset": 12
+                }
+              ],
+              "location": "SearchWithFilter._i_select_something_as_the_brand(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 41,
+            "name": ": I select \"£70 - £105\" as the price filter",
+            "match": {
+              "arguments": [
+                {
+                  "val": "£70 - £105",
+                  "offset": 12
+                }
+              ],
+              "location": "SearchWithFilter._i_select_something_as_the_price_filter(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 42,
+            "name": ": I select the \"JABRA Coach Headphones\" with description as \"Blue\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "JABRA Coach Headphones",
+                  "offset": 16
+                },
+                {
+                  "val": "Blue",
+                  "offset": 61
+                }
+              ],
+              "location": "LaptopCart._i_select_the_something_with_description_as_something(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 43,
+            "name": ": Add it to the cart",
+            "match": {
+              "location": "LaptopCart._add_it_to_the_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 44,
+            "name": ": I click on the \"Smart Devices\" search filter",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Smart Devices",
+                  "offset": 18
+                }
+              ],
+              "location": "SearchStepDfn._i_click_on_the_something_search_filter(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 45,
+            "name": ": I select \"SAMSUNG\" as the brand",
+            "match": {
+              "arguments": [
+                {
+                  "val": "SAMSUNG",
+                  "offset": 12
+                }
+              ],
+              "location": "SearchWithFilter._i_select_something_as_the_brand(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 46,
+            "name": ": I select the \"SAMSUNG Gear S2 Smartwatch\" with description as \"Black\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "SAMSUNG Gear S2 Smartwatch",
+                  "offset": 16
+                },
+                {
+                  "val": "Black",
+                  "offset": 65
+                }
+              ],
+              "location": "LaptopCart._i_select_the_something_with_description_as_something(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 47,
+            "name": ": Add it to the cart",
+            "match": {
+              "location": "LaptopCart._add_it_to_the_cart()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 48,
+            "name": ": I change the quantity of item \"SAMSUNG Gear S2 Smartwatch\" to \"3\" and click on update button",
+            "match": {
+              "arguments": [
+                {
+                  "val": "SAMSUNG Gear S2 Smartwatch",
+                  "offset": 33
+                },
+                {
+                  "val": "3",
+                  "offset": 65
+                }
+              ],
+              "location": "SearchWithFilter._i_change_the_quantity_of_item_something_to_something_and_click_on_update_button(String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 49,
+            "name": ": Navigate to user details page and provide the following details",
+            "match": {
+              "location": "LaptopCart._navigate_to_user_details_page_and_provide_the_following_details(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Destination",
+                  "Singapore"
+                ],
+                "line": 50
+              },
+              {
+                "cells": [
+                  "Airline",
+                  "AirAsia"
+                ],
+                "line": 51
+              },
+              {
+                "cells": [
+                  "FlightNo",
+                  "A089"
+                ],
+                "line": 52
+              },
+              {
+                "cells": [
+                  "FlightDate",
+                  "24/08/2018"
+                ],
+                "line": 53
+              },
+              {
+                "cells": [
+                  "FlightTime",
+                  "5:00"
+                ],
+                "line": 54
+              },
+              {
+                "cells": [
+                  "Terminal",
+                  "Terminal 1"
+                ],
+                "line": 55
+              },
+              {
+                "cells": [
+                  "FirstName",
+                  "Selenium"
+                ],
+                "line": 56
+              },
+              {
+                "cells": [
+                  "LastName",
+                  "Java"
+                ],
+                "line": 57
+              },
+              {
+                "cells": [
+                  "Email",
+                  "sq@j.com"
+                ],
+                "line": 58
+              },
+              {
+                "cells": [
+                  "Phone",
+                  "121212121"
+                ],
+                "line": 59
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 36,
+            "name": "@chrome"
+          }
+        ]
+      }
+    ],
+    "name": "Search with specific filter and add it to cart",
+    "description": "",
+    "id": "search-with-specific-filter-and-add-it-to-cart",
+    "keyword": "Feature",
+    "uri": "featurefile/SearchWithFilter.feature"
+  }
+]

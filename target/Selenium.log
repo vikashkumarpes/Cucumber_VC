@@ -1,0 +1,33 @@
+2018-03-13 23:23:31 [INFO ] [InitializeWebDrive] - [standAloneStepUp] PhantomJs
+2018-03-13 23:26:02 [INFO ] [InitializeWebDrive] - [after] 
+2018-03-13 23:26:02 [INFO ] [InitializeWebDrive] - [standAloneStepUp] PhantomJs
+2018-03-13 23:27:14 [INFO ] [InitializeWebDrive] - [after] 
+2018-03-13 23:27:14 [INFO ] [InitializeWebDrive] - [standAloneStepUp] PhantomJs
+2018-03-13 23:27:42 [INFO ] [InitializeWebDrive] - [after] 
+2018-03-13 23:27:42 [INFO ] [InitializeWebDrive] - [standAloneStepUp] PhantomJs
+2018-03-13 23:28:14 [INFO ] [InitializeWebDrive] - [before] PhantomJs
+2018-03-13 23:28:38 [INFO ] [GenericHelper] - [takeScreenShot] C:\Users\Ajit\git\SeleniumCucumber\target\test-classes\screenshots\_2018-03-13\Search based on Mobile Phones.jpg
+2018-03-13 23:28:39 [INFO ] [InitializeWebDrive] - [tearDownDriver] Shutting Down the driver
+2018-03-13 23:28:39 [INFO ] [InitializeWebDrive] - [after] 
+2018-03-13 23:28:39 [INFO ] [InitializeWebDrive] - [standAloneStepUp] PhantomJs
+2018-03-13 23:28:55 [INFO ] [InitializeWebDrive] - [before] PhantomJs
+2018-03-13 23:29:07 [INFO ] [GenericHelper] - [takeScreenShot] C:\Users\Ajit\git\SeleniumCucumber\target\test-classes\screenshots\_2018-03-13\Search based on Books.jpg
+2018-03-13 23:29:07 [INFO ] [InitializeWebDrive] - [tearDownDriver] Shutting Down the driver
+2018-03-13 23:29:07 [INFO ] [InitializeWebDrive] - [after] 
+2018-03-13 23:29:11 [INFO ] [InitializeWebDrive] - [standAloneStepUp] Chrome
+2018-03-13 23:30:01 [INFO ] [InitializeWebDrive] - [afterChrome] 
+2018-03-13 23:30:02 [INFO ] [InitializeWebDrive] - [standAloneStepUp] PhantomJs
+2018-03-13 23:30:20 [INFO ] [InitializeWebDrive] - [before] PhantomJs
+2018-03-13 23:30:25 [INFO ] [GenericHelper] - [takeScreenShot] C:\Users\Ajit\git\SeleniumCucumber\target\test-classes\screenshots\_2018-03-13\Search Tablet and add it to the cart.jpg
+2018-03-13 23:30:27 [INFO ] [InitializeWebDrive] - [tearDownDriver] Shutting Down the driver
+2018-03-13 23:30:27 [INFO ] [InitializeWebDrive] - [after] 
+2018-03-13 23:30:28 [INFO ] [InitializeWebDrive] - [standAloneStepUp] PhantomJs
+2018-03-13 23:30:45 [INFO ] [InitializeWebDrive] - [before] PhantomJs
+2018-03-13 23:30:48 [INFO ] [GenericHelper] - [takeScreenShot] C:\Users\Ajit\git\SeleniumCucumber\target\test-classes\screenshots\_2018-03-13\Search based on Speakers.jpg
+2018-03-13 23:30:49 [INFO ] [InitializeWebDrive] - [tearDownDriver] Shutting Down the driver
+2018-03-13 23:30:49 [INFO ] [InitializeWebDrive] - [after] 
+2018-03-13 23:30:49 [INFO ] [InitializeWebDrive] - [standAloneStepUp] Firefox
+2018-03-13 23:31:57 [INFO ] [InitializeWebDrive] - [afterFirefox] 
+2018-03-13 23:31:57 [INFO ] [InitializeWebDrive] - [standAloneStepUp] Chrome
+2018-03-13 23:32:23 [INFO ] [InitializeWebDrive] - [afterChrome] 
+2018-03-13 23:32:55 [INFO ] [CucumberReport] - [onFinish] Report Generated : target\test-classes\reports\cucumberreports
